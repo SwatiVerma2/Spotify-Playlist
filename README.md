@@ -106,5 +106,5 @@ To interact with Spotify’s API, you need to obtain a Client ID and Client Secr
   ```
 
 
+![image](https://github.com/user-attachments/assets/8676482e-5d99-48b2-9b2d-b20915031819)
 
-![image](https://github.com/user-attachments/assets/214cf3e9-3f6d-410c-afd9-af4a6b3db9a7)
