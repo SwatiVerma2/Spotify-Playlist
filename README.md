@@ -81,6 +81,7 @@ To interact with Spotify’s API, you need to obtain a Client ID and Client Secr
   ```bash
   docker run --rm -it -p 27228:27228 --env-file .env ghcr.io/conradludgate/spotify-auth-proxy
   ```
+The command is used to run the Spotify authorization proxy server, which is a crucial part of the process for obtaining an API key (also known as an access token) required to interact with Spotify's API.
 
 ## Usage
 
