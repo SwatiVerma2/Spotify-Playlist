@@ -83,6 +83,29 @@ To interact with Spotify’s API, you need to obtain a Client ID and Client Secr
   ```
 The command is used to run the Spotify authorization proxy server, which is a crucial part of the process for obtaining an API key (also known as an access token) required to interact with Spotify's API.
 
+### 7. Provider.tf
+```hcl
+  data "spotify_search_track" "karan"{
+  artist = "Karan Aujla"
+}
+
+resource "spotify_playlist" "Jaskaran" {
+  name = "Aujla-ni-Aujla"
+  tracks = [data.spotify_search_track.karan.tracks[0].id,
+  data.spotify_search_track.karan.tracks[1].id,
+  data.spotify_search_track.karan.tracks[2].id,
+  data.spotify_search_track.karan.tracks[3].id,
+  data.spotify_search_track.karan.tracks[4].id,
+  data.spotify_search_track.karan.tracks[5].id,
+  data.spotify_search_track.karan.tracks[6].id
+  ] 
+
+}
+```
+Purpose: The spotify_search_track data source is used to search for tracks by the artist "Karan Aujla" on Spotify.
+Functionality: It retrieves a list of tracks that match the search criteria (i.e., tracks by "Karan Aujla").
+tracks: This field is an array that includes the first seven tracks returned by the spotify_search_track data source. Each track's ID is referenced using data.spotify_search_track.karan.tracks[index].id, where index ranges from 0 to 6.
+
 ## Usage
 
 - **Initialize Terraform**: Run the following command to initialize Terraform and download the required provider:
