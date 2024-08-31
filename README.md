@@ -124,11 +124,7 @@ resource "spotify_playlist" "Jaskaran" {
 
 ## Security
 
-- Ensure that your `.env` file containing sensitive information like your Client ID and Client Secret is not committed to Git. Add it to `.gitignore`:
-
-  ```bash
-  echo ".env" >> .gitignore
-  ```
+- Ensure that your `.env` , `tfvars` , `terraform.tfstate` file containing sensitive information like your Client ID and Client Secret is not committed to Git. Add it to `.gitignore`:
 
 
 # Playlist
