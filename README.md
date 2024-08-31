@@ -102,9 +102,10 @@ resource "spotify_playlist" "Jaskaran" {
 
 }
 ```
-Purpose: The spotify_search_track data source is used to search for tracks by the artist "Karan Aujla" on Spotify.
-Functionality: It retrieves a list of tracks that match the search criteria (i.e., tracks by "Karan Aujla").
-tracks: This field is an array that includes the first seven tracks returned by the spotify_search_track data source. Each track's ID is referenced using data.spotify_search_track.karan.tracks[index].id, where index ranges from 0 to 6.
+- Purpose: The spotify_search_track data source is used to search for tracks by the artist "Karan Aujla" on Spotify.
+- Functionality: It retrieves a list of tracks that match the search criteria (i.e., tracks by "Karan Aujla").
+- tracks: This field is an array that includes the first seven tracks returned by the spotify_search_track data source.
+  Each track's ID is referenced using data.spotify_search_track.karan.tracks[index].id, where index ranges from 0 to 6.
 
 ## Usage
 
